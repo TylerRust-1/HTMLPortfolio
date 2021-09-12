@@ -7,7 +7,7 @@ header {
 }
 
 
-a:link, a:visited {
+header a:link, a:visited {
     background-color: #e7b0ac;
     color: rgb(69, 99, 233);
     padding: 14px 25px;
@@ -63,9 +63,10 @@ a:hover, a:active {
 
   .content {
     padding: 0 18px;
-    display: none;
+    background-color: white;
+    max-height: 0;
     overflow: hidden;
-    background-color: #f1f1f1;
+    transition: max-height 0.2s ease-out;
   }
 
   .collapsible:after {
