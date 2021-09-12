@@ -1,40 +1,81 @@
 header {
-    padding: 60px;
+    padding: 40px;
     text-align: center;
     background: #242726;
     color: white;
     font-size: 30px;
 }
 
+
 a:link, a:visited {
-    background-color: #f44336;
-    color: white;
+    background-color: #e7b0ac;
+    color: rgb(69, 99, 233);
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border: 2px solid rgb(252, 252, 252);
+}
+  
+a:hover, a:active {
+    background-color: red;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.row {
+    display: flex;
+}
+  
+  .column {
+    flex: 50%;
+}
+
+.box {
+    width: auto;
+    height: auto;
+  }
+  img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active .collapsible:hover {
+    background-color: #ccc;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
   }
   
-  a:hover, a:active {
-    background-color: red;
-  }
-
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-  }
-
-  .right {
-    display: block;
-    margin-left: auto;
-    margin-right: 50px;
-    width: 25%;
-  }
-  .left {
-    display: block;
-    margin-left: 50px;
-    margin-right: auto;
-    width: 25%;
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
