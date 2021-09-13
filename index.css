@@ -17,6 +17,11 @@ header a:link, a:visited {
     border: 2px solid rgb(252, 252, 252);
 }
   
+header img {
+  width: 70%;
+  height: 70%;
+}
+
 a:hover, a:active {
     background-color: red;
 }
@@ -39,10 +44,6 @@ a:hover, a:active {
 .box {
     width: auto;
     height: auto;
-  }
-  img {
-    width: 70%;
-    height: 70%;
   }
 
   .collapsible {
@@ -79,4 +80,16 @@ a:hover, a:active {
   
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+  .collapsiblecontent{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
   }
